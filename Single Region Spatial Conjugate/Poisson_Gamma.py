@@ -1,6 +1,6 @@
 class Poisson_Gamma:
     #code initially taken from
-    #https://jeremy9959.github.io/bayesian-online-changepoint/
+    #https://jeremy9959.net/Blog/bayesian-online-changepoint-fixed/
     def __init__(self, k, theta):
         #initialise prior parameters
         self.k_prior = self.k = np.array([k])
