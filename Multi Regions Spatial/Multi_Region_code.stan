@@ -29,5 +29,5 @@ model {
     Omega ~ lkj_corr(Omega_k); 
     Gamma ~ multi_normal(Mu, Sigma);
     //Likelihood
-    for (i in 1:K) y[i,] ~ poisson(squared(Gamma[i]));
+    for (i in 1:K) y[i,] ~ poisson(square(Gamma[i]));
 }
